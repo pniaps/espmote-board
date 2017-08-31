@@ -1,4 +1,4 @@
-update=29/08/2017 7:32:09
+update=31/08/2017 6:56:49
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,9 +25,19 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
-LibDir=../kicad-ESP8266;../pniaps_lib
+LibDir=../kicad-ESP8266;../pniaps_kicad
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,15 +68,5 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=pnia_kicad
-LibName31=ESP8266
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
+LibName30=ESP8266
+LibName31=pniaps_kicad

@@ -1,4 +1,4 @@
-update=05/09/2017 6:02:09
+update=05/09/2017 6:26:04
 version=1
 last_client=kicad
 [pcbnew]
@@ -68,5 +68,5 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=pniaps_kicad
+LibName30=pniaps
 LibName31=ESP8266

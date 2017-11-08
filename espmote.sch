@@ -57,17 +57,6 @@ F 3 "" H 9000 1500 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L ESP-12E U1
-U 1 1 59A36270
-P 3750 2450
-F 0 "U1" H 3150 3100 50  0000 L CNN
-F 1 "ESP-12E" H 4350 3100 50  0000 R CNN
-F 2 "pniaps:ESP-12E" H 3750 2950 50  0001 C CNN
-F 3 "" H 3750 2450 50  0001 C CNN
-	1    3750 2450
-	1    0    0    -1  
-$EndComp
-$Comp
 L LM1117-3.3 U2
 U 1 1 59A3640F
 P 7500 1350
@@ -90,25 +79,14 @@ F 3 "" H 7675 5650 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L H11AA1 U7
-U 1 1 59A375C1
-P 7700 5050
-F 0 "U7" H 7500 5250 50  0000 L CNN
-F 1 "H11AA1" H 7700 5250 50  0000 L CNN
-F 2 "Housings_DIP:DIP-6_W7.62mm" H 7700 4850 50  0001 C CIN
-F 3 "" H 7700 5050 50  0001 L CNN
-	1    7700 5050
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Screw_Terminal_01x06 J2
+L Screw_Terminal_01x04 J2
 U 1 1 59A37682
-P 10350 800
-F 0 "J2" H 10350 1200 50  0000 C CNN
-F 1 "Line" H 10350 300 50  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-6pol" H 10350 800 50  0001 C CNN
-F 3 "" H 10350 800 50  0001 C CNN
-	1    10350 800 
+P 10450 800
+F 0 "J2" V 10500 1000 50  0000 L CNN
+F 1 "Line" V 10400 1000 50  0000 L CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-4pol" H 10450 800 50  0001 C CNN
+F 3 "" H 10450 800 50  0001 C CNN
+	1    10450 800 
 	0    1    -1   0   
 $EndComp
 $Comp
@@ -212,8 +190,8 @@ $Comp
 L Conn_01x04 J1
 U 1 1 59A4F8A3
 P 5350 900
-F 0 "J1" H 5350 1100 50  0000 C CNN
-F 1 "Serial" H 5350 600 50  0000 C CNN
+F 0 "J1" V 5400 600 50  0000 R CNN
+F 1 "Serial" V 5300 600 50  0000 R CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 5350 900 50  0001 C CNN
 F 3 "" H 5350 900 50  0001 C CNN
 	1    5350 900 
@@ -222,7 +200,7 @@ $EndComp
 Connection ~ 4950 1350
 NoConn ~ 4650 2650
 Wire Wire Line
-	2150 1350 2150 2850
+	2150 1000 2150 2850
 Wire Wire Line
 	8000 5750 8150 5750
 Wire Wire Line
@@ -239,17 +217,6 @@ F 2 "Housings_DIP:DIP-6_W7.62mm" H 7500 4050 50  0001 L CIN
 F 3 "" H 7675 4250 50  0001 L CNN
 	1    7700 4250
 	1    0    0    -1  
-$EndComp
-$Comp
-L H11AA1 U5
-U 1 1 59A51B09
-P 7700 3650
-F 0 "U5" H 7500 3850 50  0000 L CNN
-F 1 "H11AA1" H 7700 3850 50  0000 L CNN
-F 2 "Housings_DIP:DIP-6_W7.62mm" H 7700 3450 50  0001 C CIN
-F 3 "" H 7700 3650 50  0001 L CNN
-	1    7700 3650
-	-1   0    0    -1  
 $EndComp
 $Comp
 L Q_TRIAC_AGA D2
@@ -295,9 +262,7 @@ Wire Wire Line
 Wire Wire Line
 	10350 5550 10350 1000
 Wire Wire Line
-	8000 4150 10150 4150
-Wire Wire Line
-	10150 4150 10150 1000
+	8000 4150 10250 4150
 Wire Wire Line
 	8900 4650 8900 4750
 Wire Wire Line
@@ -306,62 +271,6 @@ Connection ~ 8900 4150
 Wire Wire Line
 	8900 5750 8900 5550
 Connection ~ 8900 5550
-$Comp
-L R R14
-U 1 1 59A52CE3
-P 8450 3550
-F 0 "R14" V 8530 3550 50  0000 C CNN
-F 1 "33K" V 8450 3550 50  0000 C CNN
-F 2 "Resistors_SMD:R_2512_HandSoldering" V 8380 3550 50  0001 C CNN
-F 3 "" H 8450 3550 50  0001 C CNN
-	1    8450 3550
-	0    1    1    0   
-$EndComp
-$Comp
-L R R15
-U 1 1 59A52CE9
-P 8450 3750
-F 0 "R15" V 8530 3750 50  0000 C CNN
-F 1 "33K" V 8450 3750 50  0000 C CNN
-F 2 "Resistors_SMD:R_2512_HandSoldering" V 8380 3750 50  0001 C CNN
-F 3 "" H 8450 3750 50  0001 C CNN
-	1    8450 3750
-	0    1    1    0   
-$EndComp
-$Comp
-L R R17
-U 1 1 59A52DC5
-P 8450 4950
-F 0 "R17" V 8530 4950 50  0000 C CNN
-F 1 "33K" V 8450 4950 50  0000 C CNN
-F 2 "Resistors_SMD:R_2512_HandSoldering" V 8380 4950 50  0001 C CNN
-F 3 "" H 8450 4950 50  0001 C CNN
-	1    8450 4950
-	0    1    1    0   
-$EndComp
-$Comp
-L R R18
-U 1 1 59A52DCB
-P 8450 5150
-F 0 "R18" V 8530 5150 50  0000 C CNN
-F 1 "33K" V 8450 5150 50  0000 C CNN
-F 2 "Resistors_SMD:R_2512_HandSoldering" V 8380 5150 50  0001 C CNN
-F 3 "" H 8450 5150 50  0001 C CNN
-	1    8450 5150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8000 3550 8300 3550
-Wire Wire Line
-	8300 3750 8000 3750
-Wire Wire Line
-	8000 4950 8300 4950
-Wire Wire Line
-	8300 5150 8000 5150
-Wire Wire Line
-	6250 5150 7400 5150
-Wire Wire Line
-	6250 3750 7400 3750
 Wire Wire Line
 	2150 1350 7200 1350
 Wire Wire Line
@@ -375,18 +284,9 @@ Wire Wire Line
 	5550 1650 8350 1650
 Wire Wire Line
 	6250 1650 6250 5750
-Connection ~ 6250 3750
 Wire Wire Line
 	5550 1100 5550 1650
 Connection ~ 6250 1650
-Wire Wire Line
-	8600 3550 10050 3550
-Wire Wire Line
-	10050 3550 10050 1000
-Wire Wire Line
-	8600 4950 10250 4950
-Wire Wire Line
-	10250 4950 10250 1000
 Wire Wire Line
 	8900 6050 8900 6150
 Wire Wire Line
@@ -394,67 +294,15 @@ Wire Wire Line
 Wire Wire Line
 	10450 6150 10450 1000
 Wire Wire Line
-	10550 1000 10550 5150
-Wire Wire Line
 	8900 4750 10450 4750
 Connection ~ 10450 4750
-Wire Wire Line
-	10550 3750 8600 3750
-Wire Wire Line
-	10550 5150 8600 5150
-Connection ~ 10550 3750
 Wire Wire Line
 	9700 1350 10450 1350
 Connection ~ 10450 1350
 Wire Wire Line
-	9700 1650 10550 1650
-Connection ~ 10550 1650
-Wire Wire Line
-	2700 3650 7400 3650
-Wire Wire Line
-	2700 3650 2700 2750
-Wire Wire Line
 	2600 2650 2600 4150
 Wire Wire Line
-	2500 5050 7400 5050
-Wire Wire Line
-	2500 5050 2500 2550
-Wire Wire Line
 	2400 2450 2400 5550
-$Comp
-L R R9
-U 1 1 59A61B09
-P 7000 1900
-F 0 "R9" V 7080 1900 50  0000 C CNN
-F 1 "10k" V 7000 1900 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 6930 1900 50  0001 C CNN
-F 3 "" H 7000 1900 50  0001 C CNN
-	1    7000 1900
-	-1   0    0    1   
-$EndComp
-$Comp
-L R R8
-U 1 1 59A61B7F
-P 6750 1900
-F 0 "R8" V 6830 1900 50  0000 C CNN
-F 1 "10k" V 6750 1900 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 6680 1900 50  0001 C CNN
-F 3 "" H 6750 1900 50  0001 C CNN
-	1    6750 1900
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7000 1350 7000 1750
-Connection ~ 7000 1350
-Wire Wire Line
-	6750 1350 6750 1750
-Connection ~ 6750 1350
-Wire Wire Line
-	7000 2050 7000 3650
-Connection ~ 7000 3650
-Wire Wire Line
-	6750 2050 6750 5050
-Connection ~ 6750 5050
 Wire Wire Line
 	2150 2850 2850 2850
 Wire Wire Line
@@ -464,11 +312,7 @@ Wire Wire Line
 Wire Wire Line
 	2400 2450 2850 2450
 Wire Wire Line
-	2500 2550 2850 2550
-Wire Wire Line
 	2600 2650 2850 2650
-Wire Wire Line
-	2700 2750 2850 2750
 Wire Wire Line
 	4650 2750 5050 2750
 Wire Wire Line
@@ -481,12 +325,9 @@ Wire Wire Line
 Wire Wire Line
 	5450 2250 4650 2250
 NoConn ~ 2850 2250
-Wire Wire Line
-	7400 4350 6250 4350
 Connection ~ 6250 4350
 Wire Wire Line
 	6250 5750 7400 5750
-Connection ~ 6250 5150
 Wire Wire Line
 	7400 5550 6650 5550
 Wire Wire Line
@@ -495,8 +336,6 @@ Wire Wire Line
 	2600 4150 6350 4150
 Wire Wire Line
 	2400 5550 6350 5550
-NoConn ~ 7400 3550
-NoConn ~ 7400 4950
 Wire Wire Line
 	8600 4600 8750 4600
 Wire Wire Line
@@ -509,4 +348,45 @@ NoConn ~ 4650 2350
 Connection ~ 7500 1650
 Wire Wire Line
 	7800 1350 8350 1350
+Wire Wire Line
+	10250 4150 10250 1000
+Wire Wire Line
+	9700 1650 10550 1650
+Wire Wire Line
+	10550 1650 10550 1000
+$Comp
+L Screw_Terminal_01x04 J3
+U 1 1 59FA0F17
+P 2050 800
+F 0 "J3" V 2100 1000 50  0000 L CNN
+F 1 "Switch" V 2000 1000 50  0000 L CNN
+F 2 "Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MKDS1.5-4pol" H 2050 800 50  0001 C CNN
+F 3 "" H 2050 800 50  0001 C CNN
+	1    2050 800 
+	0    1    -1   0   
+$EndComp
+$Comp
+L ESP-12E U1
+U 1 1 59A36270
+P 3750 2450
+F 0 "U1" H 3150 3100 50  0000 L CNN
+F 1 "ESP-12E" H 4350 3100 50  0000 R CNN
+F 2 "pniaps:ESP-12E" H 3750 2950 50  0001 C CNN
+F 3 "" H 3750 2450 50  0001 C CNN
+	1    3750 2450
+	1    0    0    -1  
+$EndComp
+Connection ~ 2150 1350
+Wire Wire Line
+	2050 1000 2050 4350
+Wire Wire Line
+	2050 4350 7400 4350
+Wire Wire Line
+	1950 1000 1950 2750
+Wire Wire Line
+	1950 2750 2850 2750
+Wire Wire Line
+	1850 1000 1850 2550
+Wire Wire Line
+	1850 2550 2850 2550
 $EndSCHEMATC
